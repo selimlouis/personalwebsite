@@ -1,34 +1,72 @@
 /* Style the video: 100% width and height to cover the entire window */
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#landingpage  {
+    
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+    
+
+}
+
 #myVideo {
-    position: fixed;
+    /*
     right: 0;
     bottom: 0;
+    min-width: 100vw;
+    min-height: 100vh;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    object-fit: cover;
+    */
+    position: absolute;
+    top: 50%;
+    left: 50%;
     min-width: 100%;
     min-height: 100%;
-  }
-  
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#second-section {
+    min-width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    background-color: #07151C;
+    margin: 0;
+    padding: 0;
+}
+
+
+
 /* Add some content at the bottom of the video/page */
 .content {
-    position: fixed;
-    bottom: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
+    position: absolute;
+    text-align: center;
+
+    
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-size: 3em;
+    /*
+    text-shadow: 1px 1px 4px black;
+    */
 }
 
-/* Style the button used to pause/play the video */
-#myBtn {
-    width: 200px;
-    font-size: 18px;
-    padding: 10px;
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-}
-
-#myBtn:hover {
-    background: #ddd;
-    color: black;
-}
