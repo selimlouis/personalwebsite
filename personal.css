@@ -143,10 +143,10 @@ section {
 
 .profile-text {
     background-color: #07151C;
-    text-justify: distribute;
     color: #f1f1f1;
     border-bottom: 14px solid rgba(247, 166, 122,1);
-
+    text-align: justify;
+    text-justify: inter-word;
     padding: 20px;
     
 }
