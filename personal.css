@@ -114,17 +114,46 @@ section {
 
 }
 
-/*
-.content a {
-    display: block;
-    min-width: 50px;
-    min-height: 50px;
+
+#about {
+    background-color: #f1f1f1;
+    color: #07151C;
+    min-width: 100%;
+    min-height: 100vh;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    overflow: hidden;
 }
-.content img {
-    display: block;
-    position: absolute;
-    height: 25%;
-    width: 25%;
-    border: 3px solid greenyellow;
+
+.profile {
+    box-shadow: 0px 5px 10px black;
+    min-height: 70vh;
+    border-radius: 5px;
+    overflow: hidden;
 }
-*/
+
+.row {
+    min-height: 70vh;
+    
+}
+
+.col-md {
+    min-height: 70vh;
+}    
+
+.profile-text {
+    background-color: #07151C;
+    text-justify: distribute;
+    color: #f1f1f1;
+    border-bottom: 14px solid rgba(247, 166, 122,1);
+
+    padding: 20px;
+    
+}
+
+.profile-picture {
+    background-image: url(img/profile.jpg);
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
